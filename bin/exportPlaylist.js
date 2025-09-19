@@ -22,12 +22,12 @@ const {
     getPlaylistById,
     getPlaylistByUrl,
     getFormattedPlaylistTracks
-} = require('./spotify');
+} = require('../lib/spotify');
 
 const { 
     exportTracksToCSV, 
     validateTrackData 
-} = require('./csvExport');
+} = require('../lib/csvExport');
 
 /**
  * Display application header

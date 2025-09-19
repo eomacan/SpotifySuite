@@ -16,7 +16,7 @@ const {
     getAccessToken, 
     createSpotifyApiClient,
     getTrackAlbumInformation
-} = require('./spotify');
+} = require('../lib/spotify');
 
 /**
  * Display application header

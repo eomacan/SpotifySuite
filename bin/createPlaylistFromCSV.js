@@ -17,14 +17,14 @@ const {
     getCurrentUserProfile,
     createPlaylist,
     addTracksToPlaylist
-} = require('./spotify');
+} = require('../lib/spotify');
 
-const { performOAuthFlow } = require('./oauthFlow');
+const { performOAuthFlow } = require('../lib/oauthFlow');
 
 const {
     readCSVFile,
     validateInputCSV
-} = require('./csvProcessor');
+} = require('../lib/csvProcessor');
 
 /**
  * Display application header

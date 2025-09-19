@@ -16,14 +16,14 @@ const {
     getAccessToken, 
     createSpotifyApiClient,
     findEarliestAlbumBeforeYear
-} = require('./spotify');
+} = require('../lib/spotify');
 
 const {
     readCSVFile,
     validateInputCSV,
     writeEnhancedCSV,
     createEnhancedRecord
-} = require('./csvProcessor');
+} = require('../lib/csvProcessor');
 
 /**
  * Display application header
