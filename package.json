@@ -1,0 +1,73 @@
+{
+  "name": "spotify-suite",
+  "version": "1.0.0",
+  "description": "Complete suite for Spotify playlist management, track analysis, and playlist creation",
+  "main": "index.js",
+  "bin": {
+    "spotify-export": "./bin/exportPlaylist.js",
+    "spotify-find-albums": "./bin/findTrackAlbums.js",
+    "spotify-find-albums-csv": "./bin/findTrackAlbumsCSV.js",
+    "spotify-create-playlist": "./bin/createPlaylistFromCSV.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "export": "node bin/exportPlaylist.js",
+    "find-albums": "node bin/findTrackAlbums.js",
+    "find-albums-csv": "node bin/findTrackAlbumsCSV.js",
+    "create-playlist": "node bin/createPlaylistFromCSV.js",
+    "test-config": "node test/testConfig.js",
+    "test-spotify": "node test/testSpotify.js",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "spotify",
+    "playlist",
+    "music",
+    "csv",
+    "export",
+    "cli",
+    "spotify-api",
+    "music-management",
+    "playlist-tools"
+  ],
+  "author": {
+    "name": "Emre Omacan",
+    "email": "eomacan@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spotify-suite/spotify-suite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spotify-suite/spotify-suite/issues"
+  },
+  "homepage": "https://github.com/spotify-suite/spotify-suite#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "csv-writer": "^1.6.0",
+    "csv-parse": "^5.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "scripts/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "preferGlobal": true
+}
